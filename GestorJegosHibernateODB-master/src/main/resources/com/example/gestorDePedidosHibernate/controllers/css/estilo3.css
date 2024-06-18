@@ -1,0 +1,113 @@
+            /*-------------Tipo  y tamaño de letra-------------*/
+  .root{
+      -fx-font-family: "MingLiU-ExtB";
+      -fx-font-size: 19px;
+  }
+
+            /*-------------Sombreado 3D-------------*/
+Button, .tabla, .titulo{
+    -fx-effect: dropshadow(three-pass-box, rgb(19, 39, 87), 10, 0, 2, 2);
+
+}
+
+            /*-------------Botones-------------*/
+Button {
+    -fx-background-color: #998580;
+    -fx-border-color: #998580;
+    -fx-border-width: 2;
+    -fx-text-fill: #000000;
+    -fx-font-family: "MingLiU-ExtB";
+    -fx-font-size: 20px;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-radius: 10 10 10 10;
+}
+
+Button:hover{
+    -fx-cursor: HAND;
+}
+Button.btnEntrar{
+    -fx-background-color: #becca9;
+}
+Button.btnEntrar:hover{
+    -fx-background-color: #98a978;
+}
+Button.btnAtras {
+    -fx-background-color: #ccb8b4;
+}
+Button.btnAtras:hover  {
+    -fx-background-color: #b29c97;
+}
+Button.btnLogout {
+    -fx-background-color: #e38b8b;
+}
+Button.btnLogout:hover {
+    -fx-background-color: #b47575;
+}
+
+            /*-------------Tablas-------------*/
+.root .table-view{
+    -fx-control-inner-background: #fae1d9;
+    -fx-border-width: 0px;
+}
+.tabla{
+    -fx-border-style: none;
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+}
+.fondoLogin{
+    -fx-effect: dropshadow(three-pass-box, rgb(19, 39, 87), 10, 0, 2, 2);
+    -fx-border-style: none;
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-background-image: url("fondoMar1.jpg");
+    -fx-background-repeat: repeat ;
+}
+.table-row-cell .table-cell {
+    -fx-border-width: 0px;
+    -fx-font: 19px "MingLiU-ExtB";
+}
+.table-cell {
+    -fx-padding: 10px;
+    -fx-text-fill: black;
+    -fx-alignment: center center;
+}
+.table-row-cell:even{
+    -fx-background-color: rgb(248, 214, 203);
+}
+.table-row-cell:odd{
+    -fx-background-color: rgb(250, 225, 217);
+}
+.table-row-cell:hover, .table-row-cell:selected {
+    -fx-background-color: #cacede;
+}
+#tablaPedidos:hover {
+    -fx-cursor: HAND;
+}
+.table-row-cell:empty, .table-cell:empty:hover {
+    -fx-background-color: #fae1d9;
+    -fx-border-width: 0px;
+    -fx-border-color: #fae1d9;
+    -fx-cursor: DEFAULT;
+    -fx-effect: none;
+}
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+.titulo{
+    -fx-background-color: #adb3c9;
+    -fx-border-width: 1;
+    -fx-border-color: #2a3a67;
+    -fx-background-radius: 10 10 0 0;
+    -fx-border-radius: 10 10 0 0;
+}
+.fondo{
+    -fx-background-image: url("fondoMar.jpg");
+    -fx-scale-factor: 0.1;
+    -fx-background-repeat: repeat;
+    -fx-background-color: rgb(250, 225, 217);
+    -fx-border-width: 0px;
+}
+
+.tf{
+    -fx-effect: dropshadow(three-pass-box, rgb(0, 0, 0), 5, 0, 1, 1);
+}
